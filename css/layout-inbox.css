@@ -1,0 +1,59 @@
+.l-inbox {}
+
+.l-inbox__aside-left {
+    display: none;
+    background: #e7e7e7;
+    height: 100%;
+}
+
+.l-inbox__aside-right {
+    display: none;
+    background: #f2f2f2;
+}
+
+.l-inbox__content {
+    overflow: auto;
+    height: 1000px;
+    background: #f2f2f2;
+}
+
+@media (min-width: 768px) {
+
+    .l-inbox {
+        display: table;
+    }
+
+    .l-inbox__aside-left {
+        display: table-cell;
+        vertical-align: top;
+        width: 310px;
+    }
+
+    .l-inbox__content {
+        width: 440px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+
+    .l-inbox__content {
+        width: 400px;
+    }
+
+    .l-inbox__aside-right {
+        display: table-cell;
+        vertical-align: top;
+        width: 260px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .l-inbox__content {
+        width: 600px;
+    }
+
+}
